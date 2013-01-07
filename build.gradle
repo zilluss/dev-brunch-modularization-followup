@@ -1,0 +1,20 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "ziel.Main"
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile project(':elements/line') 
+    compile project(':elements/rectangle') 
+    compile project(':elements/circle') 
+    compile project(':elements/point') 
+    compile project(':printers/printName') 
+    compile project(':printers/printArea') 
+
+    groovy 'org.codehaus.groovy:groovy-all:1.8.6'
+}
