@@ -2,7 +2,7 @@ package ziel.printers
 import ziel.elements.Element
 
 class PrintName {
-  void for(Element element){
+  void of(Element element){
     println element.getName()
   }
 }

@@ -15,12 +15,12 @@ class Main {
       new Point(x: 3, y: 0),
       new Rectangle(x: 4, y: 1, width: 12, height: 10)]
 
-    def printArea =new PrintAreas()
-    def printName = new PrintNames()
+    def printArea =new PrintArea()
+    def printName = new PrintName()
 
     for(element in elements){
-      printNames.for(element)
-      printAreas.for(element)
+      printName.of(element)
+      printArea.of(element)
       println("---------------------------")
     }
   }
